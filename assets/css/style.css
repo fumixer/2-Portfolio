@@ -370,6 +370,11 @@ section {
 
 .portfolio img {
   width: 100%;
+  transition: transform .6s ease;/* ゆっくり変化させる */
+}
+
+.portfolio:hover img {
+  transform: scale(1.1);/* 拡大 */
 }
 
 .trainer-bio {
