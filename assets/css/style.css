@@ -353,7 +353,7 @@ section {
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE portfolio START */
-.portfolio {
+.Work {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -361,7 +361,7 @@ section {
   justify-content: space-around;
 }
 
-.portfolio {
+.portfolio, .Work {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
@@ -373,8 +373,12 @@ section {
   transition: transform .6s ease;/* ゆっくり変化させる */
 }
 
-.portfolio:hover img {
-  transform: scale(1.1);/* 拡大 */
+/* .portfolio:hover img {
+  transform: scale(1.1); 拡大
+} */
+
+#portfolio-1 {
+  min-width: 90%;
 }
 
 .trainer-bio {
