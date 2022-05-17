@@ -76,32 +76,6 @@ header nav ul li a:hover {
   text-shadow:none;
 }
 
-/* FOOTER STYLES START */
-footer {
-  background: var(--secondary-color);
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  color: var(--primary-color);
-  width: 100%;
-}
-
-footer h2 {
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--primary-color);
-}
-/* END FOOTER STYLES */
-
 /* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
@@ -121,6 +95,7 @@ section {
   align-items: flex-start;
 }
 
+/* I don't have this text now, but leave this for future use. I might use this after I have more portfolio*/
 .hero-cta {
   width: 35%;
   text-align: right;
@@ -138,126 +113,6 @@ section {
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.hero-form {
-  border: 3px solid var(--secondary-color);
-  background-color: var(--primary-color-transparent);
-  padding: 20px;
-  width: 40%;
-  margin: 3.5%;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.hero-form h3 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.hero-form p {
-  margin: 5px 0 15px 0;
-}
-
-.form-input {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px; 
-  border-radius: 10px;
-}
-
-.form-input {
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.form-input:focus {
-  background-color: rgba(255,255,255, 1);
-}
-
-.hero-form label {
-  margin: 0 5px;
-}
-
-.hero-form button {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.hero-form button:hover {
-  background-color: var(--tertiary-color);  
-}
-
-.checkbox-wrapper input[type="checkbox"], 
-.radio-wrapper input[type="radio"] {
-  opacity: 0;
-}
-
-.checkbox-wrapper label::before,
-.radio-wrapper label::before {
-    content: "";
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border: 1px solid var(--secondary-color);  
-    position: absolute;
-    top: -4px;
-    left: -30px;
-    background: rgba(255,255,255,0.75);  
-}
-
-.checkbox-wrapper label::after {
-    content: "";
-    display: inline-block;    
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    transform: rotate(-58deg);
-    position:absolute;
-    left: -26px;
-    top: 1px;
-}
-
-.checkbox-wrapper label, .radio-wrapper label  {
-    position: relative;
-    left: 10px;
-    margin: 10px;
-    line-height: 1.6;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position:absolute;
-  left: -29px;
-  top: -3px;
-  border-radius: 50%;
-  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-}
-
-/*Hide checked state */
-.checkbox-wrapper input[type="checkbox"] + label::after, 
-.radio-wrapper input[type="radio"] + label::after {
-    content: none;
-}
-
-/* show the checked state*/
-.checkbox-wrapper input[type="checkbox"]:checked + label::after, 
-.radio-wrapper input[type="radio"]:checked + label::after {
-    content: "";
-}
 /* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
@@ -280,8 +135,7 @@ section {
 }
 /* SECTION TITLE STYLES END */
 
-/* WHAT WE DO STYLES */
-
+/* About me STYLES */
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -290,69 +144,9 @@ section {
   font-size: 20px;
   text-align: center;
 }
+/* About me STYLES END */
 
-/* WHAT YOU DO STYLES END */
-
-/* WHAT YOU DO STYLES START */
-.steps { 
-  background: var(--primary-color);
-}
-
-/* 2.2 - added specific child selector */
-.step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid var(--tertiary-color);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.step:last-of-type {
-  border-bottom: none;
-}
-
-.step h3 {
-  color: var(--secondary-color);
-  font-size: 46px;
-  flex: 1 30%;
-}
-
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.step-img img {
-  max-width: 100%;
-}
-
-.step-text {
-  flex: 12;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: var(--secondary-color);
-}
-
-.step-text p {
-  color: var(--tertiary-color);
-  font-size: 18px;
-}
-/* WHAT YOU DO STYLES END */
-
-/* MEET THE portfolio START */
+/* Work STYLES START */
 .Work {
   width: 100%;
   margin: 0 auto;
@@ -471,6 +265,32 @@ section {
   position: absolute;
   width: 1px;
 }
+
+/* FOOTER STYLES START */
+footer {
+  background: var(--secondary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--primary-color);
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+/* END FOOTER STYLES */
 
 /* 2.4 - MEDIA QUERIES FOR SMALL SCREENS TO TABLETS */
 @media screen and (max-width: 980px) {
