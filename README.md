@@ -11,4 +11,4 @@ The website can be seen easily by any size of desktop, laptop or smart phone bec
 
 
 ## Deployed Link
-[Deployed Site] (https://fumixer.github.io/Challenge2-Portfolio/)
+[Deployed Site] (https://fumixer.github.io/2-Portfolio/)
